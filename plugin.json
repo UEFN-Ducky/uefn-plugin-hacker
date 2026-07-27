@@ -1,0 +1,125 @@
+{
+  "id": "hacker",
+  "kind": "plugin",
+  "version": "1.0.8",
+  "label": "Hacker",
+  "description": "Matrix-green terminal theme with fullscreen rain effect. Appearance + Matrix FX in one plugin.",
+  "min_app_version": "1.0.466",
+  "default_enabled": false,
+  "secret_keys": [],
+  "contributes": {
+    "appearance.profiles": [
+      {
+        "id": "hacker",
+        "name": "Hacker",
+        "foundation": {
+          "accent": "#00ff41",
+          "bg": "#000000",
+          "surface": "#050a05",
+          "text": "#39ff14",
+          "border": "#0d3b14"
+        },
+        "overrides": {
+          "accent-hover": "#33ff66",
+          "select": "#003b00",
+          "border-focus": "#00ff41",
+          "sidebar": "#020402",
+          "panel-header": "#030803",
+          "card": "#050a05",
+          "card-hover": "#0a140a",
+          "bg-elevated": "#0a120a",
+          "dropdown-bg": "#050a05",
+          "btn-bg": "#0a180a",
+          "btn-hover": "#102410",
+          "btn-pressed": "#061006",
+          "fg": "#39ff14",
+          "fg-dim": "#1f8f2e",
+          "fg-inverse": "#000000",
+          "muted": "#146b22",
+          "border": "#0d3b14",
+          "border-light": "#1a5c24",
+          "green": "#00ff41",
+          "red": "#ff3333",
+          "amber": "#c8ff00",
+          "blue": "#00e5ff",
+          "green-dim": "rgba(0, 255, 65, 0.12)",
+          "red-dim": "rgba(255, 51, 51, 0.15)",
+          "amber-dim": "rgba(200, 255, 0, 0.12)",
+          "blue-dim": "rgba(0, 229, 255, 0.12)",
+          "on-green": "#000000",
+          "on-amber": "#000000",
+          "shadow-sm": "0 1px 2px rgba(0, 255, 65, 0.12)",
+          "shadow-md": "0 8px 16px rgba(0, 0, 0, 0.85)",
+          "shadow-lg": "0 12px 40px rgba(0, 0, 0, 0.9)",
+          "shadow-glow": "0 0 18px rgba(0, 255, 65, 0.35)",
+          "shadow-dropdown": "0 10px 30px rgba(0, 0, 0, 0.95)",
+          "terminal-bg": "#000000",
+          "terminal-fg": "#39ff14",
+          "terminal-cursor": "#00ff41",
+          "terminal-selection": "#003b00",
+          "verse-syntax-comment": "#1f8f2e",
+          "verse-syntax-keyword": "#00ff41",
+          "verse-syntax-type": "#33ff99",
+          "verse-syntax-type-id": "#33ff99",
+          "verse-syntax-tag": "#c8ff00",
+          "verse-syntax-identifier": "#7CFF7C",
+          "verse-syntax-path": "#2ecc71",
+          "verse-syntax-string": "#9eff00",
+          "verse-syntax-string-char": "#b8ff4d",
+          "verse-syntax-string-escape": "#e0ff66",
+          "verse-syntax-error": "#ff3333",
+          "verse-syntax-number": "#00e5ff",
+          "verse-syntax-operator": "#1f8f2e",
+          "verse-syntax-operator-arith": "#1f8f2e",
+          "verse-syntax-operator-compare": "#1f8f2e",
+          "verse-syntax-operator-logical": "#00ff41",
+          "verse-syntax-bracket": "#c8ff00",
+          "verse-editor-bg": "#000000",
+          "verse-editor-fg": "#39ff14",
+          "verse-editor-gutter": "#000000",
+          "verse-editor-line-number": "#146b22",
+          "verse-editor-line-number-active": "#1f8f2e",
+          "verse-editor-cursor": "#00ff41",
+          "verse-editor-selection": "rgba(0, 255, 65, 0.28)",
+          "verse-editor-selection-inactive": "rgba(0, 255, 65, 0.14)",
+          "verse-editor-selection-highlight": "rgba(0, 255, 65, 0.18)",
+          "verse-editor-line-highlight": "#0a140a",
+          "verse-editor-line-highlight-border": "#0d3b14",
+          "verse-editor-indent": "#0d3b14",
+          "verse-editor-indent-active": "#1a5c24",
+          "verse-editor-widget-bg": "#050a05",
+          "verse-editor-widget-border": "#0d3b14",
+          "verse-editor-bracket-match-bg": "rgba(0, 255, 65, 0.18)",
+          "verse-editor-bracket-match-border": "#1f8f2e"
+        },
+        "status_overrides": {}
+      }
+    ],
+    "appearance.effects": [
+      {
+        "id": "matrix",
+        "label": "Matrix",
+        "entry": "ui/matrix.js"
+      }
+    ],
+    "walkthrough": {
+      "id": "hacker",
+      "title": "Hacker theme",
+      "auto_start": "first_enable",
+      "settings_tab": "Appearance",
+      "steps": [
+        {
+          "target": "settings.tab.appearance",
+          "title": "Appearance",
+          "body": "This theme is available in Appearance. Press Appearance, then pick Hacker \u2014 Matrix rain FX is included.",
+          "advance": "require_click",
+          "mode": "rect"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "entry": "backend",
+    "register": "register"
+  }
+}
