@@ -1,7 +1,7 @@
 {
   "id": "hacker",
   "kind": "plugin",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "label": "Hacker",
   "description": "Matrix-green terminal theme with fullscreen rain effect. Appearance + Matrix FX in one plugin.",
   "min_app_version": "1.0.466",
@@ -111,7 +111,7 @@
         {
           "target": "settings.tab.appearance",
           "title": "Appearance",
-          "body": "This theme is available in Appearance. Press Appearance, then pick Hacker \u2014 Matrix rain FX is included.",
+          "body": "This theme is available in Appearance. Press Appearance, then pick Hacker — Matrix rain FX is included.",
           "advance": "require_click",
           "mode": "rect"
         }
