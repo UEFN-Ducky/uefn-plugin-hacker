@@ -1,7 +1,7 @@
 {
   "id": "hacker",
   "kind": "plugin",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "label": "Hacker",
   "description": "Matrix-green terminal theme with fullscreen rain effect. Appearance + Matrix FX in one plugin.",
   "min_app_version": "1.0.466",
