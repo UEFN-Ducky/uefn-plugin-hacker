@@ -6,6 +6,7 @@
   "description": "Matrix-green terminal theme with fullscreen rain effect. Appearance + Matrix FX in one plugin.",
   "min_app_version": "1.0.466",
   "default_enabled": false,
+  "data_sharing": false,
   "secret_keys": [],
   "contributes": {
     "appearance.profiles": [
